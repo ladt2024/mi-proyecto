@@ -1,0 +1,27 @@
+Se puede crear un repositorio desde linea de comandos en GIT y despues subirlo a github ?
+
+Copiar
+Sí, puedes crear un repositorio desde la línea de comandos en Git y luego subirlo a GitHub. Aquí te dejo los pasos que puedes seguir:
+
+Primero, crea un nuevo repositorio en tu máquina local usando git init. Por ejemplo:
+mkdir mi-proyecto
+cd mi-proyecto
+git init
+
+Luego, agrega archivos a tu repositorio y realiza un commit. Por ejemplo:
+echo "# Mi Proyecto" >> README.md
+git add README.md
+git commit -m "primer commit"
+
+Después, ve a GitHub y crea un nuevo repositorio. No inicialices el repositorio con un archivo README, .gitignore o License. Solo dale un nombre y haz clic en “Create repository”.
+
+Luego, en tu terminal, agrega la URL de tu nuevo repositorio de GitHub como un repositorio remoto y luego haz push a él. Por ejemplo:
+
+git remote add origin https://github.com/usuario/mi-proyecto.git
+git branch -M main
+git push -u origin main
+
+
+¡Y eso es todo! Ahora tienes un repositorio en tu máquina local que está sincronizado con tu repositorio en GitHub.
+
+Espero que esto te ayude. Si tienes más preguntas, no dudes en preguntar. 😊
